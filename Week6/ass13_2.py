@@ -9,9 +9,7 @@ print('Retrieving', url)
 uhandle = urllib.request.urlopen(url)
 data = uhandle.read().decode()
 print('Retrieved', len(data), 'characters')
-print(data)
 js = json.loads(data)
-print(js)
 comments = js['comments']
 print("size:",len(comments))
 #
